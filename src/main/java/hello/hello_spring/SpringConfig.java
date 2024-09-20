@@ -1,5 +1,6 @@
 package hello.hello_spring;
 
+import hello.hello_spring.aop.TimeTraceAop;
 import hello.hello_spring.repository.JdbcMemberRepository;
 import hello.hello_spring.repository.JpaMemberRepository;
 import hello.hello_spring.repository.MemberRepository;
@@ -26,7 +27,6 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
-
 //    @Bean
 //    public MemberRepository memberRepository() {
 ////        return new MemoryMemberRepository();
